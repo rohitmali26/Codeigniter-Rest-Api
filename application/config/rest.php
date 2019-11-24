@@ -4,7 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 /*
 |--------------------------------------------------------------------------
-| HTTP protocol
+| HTTP protocol  roomali2019
 |--------------------------------------------------------------------------
 |
 | Set to force the use of HTTPS for REST API calls
@@ -17,7 +17,7 @@ $config['force_https'] = FALSE;
 | REST Output Format
 |--------------------------------------------------------------------------
 |
-| The default format of the response
+| The default format of the response roomali2019
 |
 | 'array':      Array data structure
 | 'csv':        Comma separated file
@@ -620,7 +620,7 @@ $config['allowed_cors_origins'] = ['http://localhost:4200'];
 | Added because of how Sencha Ext JS framework requires the header
 | Access-Control-Allow-Credentials to be set to true to allow the use of
 | credentials in the REST Proxy. 
-| See documentation here:
+| See documentation here: roomali2019
 | http://docs.sencha.com/extjs/6.5.2/classic/Ext.data.proxy.Rest.html#cfg-withCredentials
 |
 */

@@ -5,7 +5,7 @@ use Exception;
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 /**
- * Format class
+ * Format class roomali2019
  * Help convert between various formats such as XML, JSON, CSV, etc.
  *
  * @author    Phil Sturgeon, Chris Kacerguis, @softwarespot
@@ -19,7 +19,7 @@ class Format {
     const ARRAY_FORMAT = 'array';
 
     /**
-     * Comma Separated Value (CSV) output format
+     * Comma Separated Value (CSV) output format roomali2019
      */
     const CSV_FORMAT = 'csv';
 
@@ -519,7 +519,7 @@ class Format {
     }
 
     /**
-     * @param string $data Data to trim leading and trailing whitespace
+     * @param string $data Data to trim leading and trailing whitespace roomali2019
      * @return string Data with leading and trailing whitespace removed
      */
     protected function _from_php($data)

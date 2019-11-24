@@ -9,7 +9,7 @@ use stdClass;
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 /**
- * CodeIgniter Rest Controller
+ * CodeIgniter Rest Controller roomali2019
  * A fully RESTful server implementation for CodeIgniter using one library, one config file and one controller.
  *
  * @package         CodeIgniter
@@ -24,7 +24,7 @@ abstract class REST_Controller extends CI_Controller {
 
     // Note: Only the widely used HTTP status codes are documented
 
-    // Informational
+    // Informational roomali2019
 
     const HTTP_CONTINUE = 100;
     const HTTP_SWITCHING_PROTOCOLS = 101;
@@ -89,7 +89,7 @@ abstract class REST_Controller extends CI_Controller {
     const HTTP_FORBIDDEN = 403;
 
     /**
-     * The requested resource could not be found
+     * The requested resource could not be found roomali2019
      *
      * Note: This is sometimes used to mask if there was an UNAUTHORIZED (401) or
      * FORBIDDEN (403) error, for security reasons

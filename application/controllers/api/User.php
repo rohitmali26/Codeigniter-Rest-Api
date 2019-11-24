@@ -6,7 +6,7 @@
 class User extends REST_Controller {
     
 	  /**
-     * Get All Data from this method.
+     * Get All Data from this method  roomali2019.
      *
      * @return Response
     */
@@ -25,7 +25,6 @@ class User extends REST_Controller {
          $data = $this->db->where('name',$this->post('name'))->where('password',$this->post('password'))->get('products')->row();
          $this->response($data, REST_Controller::HTTP_OK);
     }
-    
       
     /**
      * Get All Data from this method.
@@ -36,7 +35,6 @@ class User extends REST_Controller {
     {
         $input = $this->input->post();
         $this->db->insert('products',$input);
-     
         $this->response(['Product created successfully.'], REST_Controller::HTTP_OK);
     } 
      
