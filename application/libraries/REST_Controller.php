@@ -1236,7 +1236,8 @@ abstract class REST_Controller extends CI_Controller {
                 {
                     $limited_uri = substr($limited_uri,0, -strlen($this->response->format) - 1);
                 }
-                $limited_uri = 'uri:'.$limited_uri.':'.$this->request->method; // It's good to differentiate GET from PUT
+                 $limited_uri = 'uri:'.$limited_uri.':'.$this->request->method; // It's good to differentiate GET from PUT
+           
                 break;
         }
 

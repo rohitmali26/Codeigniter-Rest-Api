@@ -3,7 +3,7 @@
    require APPPATH . '/libraries/REST_Controller.php';
    use Restserver\Libraries\REST_Controller;
      
-class Product extends REST_Controller {
+class User extends REST_Controller {
     
 	  /**
      * Get All Data from this method.
@@ -20,26 +20,10 @@ class Product extends REST_Controller {
      *
      * @return Response
     */
-	public function index_get($id = 0)
+	public function roosue_post()
 	{
-        if(!empty($id)){
-            $data = $this->db->get_where("products", ['id' => $id])->row_array();
-        }else{
-            $data = $this->db->get("products")->row_array();
-        }
-     
-        $this->response($data, REST_Controller::HTTP_OK);
-    }
-
-    public function ram_get($id = 0)
-	{
-        if(!empty($id)){
-            $data = $this->db->get_where("products", ['id' => $id])->row_array();
-        }else{
-            $data = $this->db->get("products")->result_array();
-        }
-     
-        $this->response($data, REST_Controller::HTTP_OK);
+         $data = $this->db->where('name',$this->post('name'))->where('password',$this->post('password'))->get('products')->row();
+         $this->response($data, REST_Controller::HTTP_OK);
     }
     
       
@@ -49,14 +33,6 @@ class Product extends REST_Controller {
      * @return Response
     */
     public function index_post()
-    {
-        $input = $this->input->post();
-        $this->db->insert('products',$input);
-     
-        $this->response(['Product created successfully.'], REST_Controller::HTTP_OK);
-    } 
-
-    public function relo_post()
     {
         $input = $this->input->post();
         $this->db->insert('products',$input);
